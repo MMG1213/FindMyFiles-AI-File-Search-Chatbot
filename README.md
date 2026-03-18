@@ -28,7 +28,7 @@ Per-user data isolation — each user's tokens, attachments, and chat history ar
 └──────┬───────────┬──────────┘
        │           │
   Gmail API    Drive API
-  (OAuth 2.0)  (OAuth 2.0)
+ (OAuth 2.0)  (OAuth 2.0)
        │           │
        └─────┬─────┘
              ▼
