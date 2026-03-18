@@ -15,16 +15,16 @@ Per-user data isolation — each user's tokens, attachments, and chat history ar
 
 🏗️ Architecture
 ┌─────────────────────────────┐
-│   Streamlit Frontend (app.py)│  ← Chat UI, auth pages, file panel
+│ Streamlit Frontend (app.py) │  ← Chat UI, auth pages, file panel
 └────────────┬────────────────┘
              │ LangGraph ReAct Agent
              │ (Gemini 2.5 Flash)
              ▼
 ┌─────────────────────────────┐
-│  FastMCP Server (server.py) │  ← port 9006, streamable-http
-│  Tools: fetch_emails,       │
-│  search_emails, smart_search│
-│  download_attachment, etc.  │
+│ FastMCP Server (server.py)  │  ← port 9006, streamable-http
+│ Tools: fetch_emails,        │
+│ search_emails, smart_search │
+│ download_attachment, etc.   │
 └──────┬───────────┬──────────┘
        │           │
   Gmail API    Drive API
