@@ -1,0 +1,38 @@
+# .gitignore — IMPORTANT: these files contain secrets and must NEVER be committed
+
+# Google OAuth credentials
+credentials.json
+
+# Encryption key — losing this means losing all stored tokens
+encryption.key
+
+# Environment variables (API keys)
+.env
+_env
+
+# SQLite database (contains user data)
+*.db
+*.sqlite
+
+# Per-user OAuth tokens and downloaded files
+user_data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
